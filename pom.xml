@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.bingosoft.wethura</groupId>
+    <artifactId>learn</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>WETHURA:::LEARN</name>
+
+    <modules>
+        <!-- 设计模式 -->
+        <module>design-patterns</module>
+
+        <!-- IO: 包含本地IO 和 网络IO -->
+        <module>io/network/netty/server</module>
+        <module>io/network/netty/client</module>
+
+        <!-- JAVA 特性 -->
+        <module>java/agent</module>
+        <module>java/version/jdk8</module>
+        <module>java/version/jdk9</module>
+        <module>java/version/jdk10</module>
+        <module>java/version/jdk11</module>
+
+        <!-- Spring 以及插件 -->
+        <module>spring/spring-demo</module>
+        <module>spring/components/kafka</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>RELEASE</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.5.8</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-commons-dependencies</artifactId>
+                <version>3.1.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
