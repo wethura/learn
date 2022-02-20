@@ -1,8 +1,7 @@
-package com.sola.learn;
+package com.wethura.learn.agent;
 
 import java.lang.instrument.Instrumentation;
 import java.util.Arrays;
-import java.util.Locale;
 
 /**
  * @author wethura
@@ -13,9 +12,7 @@ public class AgentMain {
         inst.addTransformer(new DefineTransformer(), true);
         for (Class loadedClass : inst.getAllLoadedClasses()) {
             StringBuilder buffer = new StringBuilder();
-            System.out.println(loadedClass.getName());
             Arrays.stream(loadedClass.getMethods()).forEach(method -> buffer.append("\n" + method.getName()));
-            System.out.println(buffer.toString());
         }
     }
 }
