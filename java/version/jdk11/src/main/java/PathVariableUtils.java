@@ -1,6 +1,6 @@
+import com.google.common.base.Strings;
+import org.junit.Test;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.testng.annotations.Test;
-import org.testng.util.Strings;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

@@ -1,4 +1,4 @@
-package com.wethura.design;
+package com.wethura.design.compositecommand;
 
 import java.util.ArrayList;
 import java.util.List;

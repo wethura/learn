@@ -1,4 +1,4 @@
-package com.wethura.design;
+package com.wethura.design.templatemethod;
 
 /**
  * reduce the same code in concrete method. extract the same code to abstract class.

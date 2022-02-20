@@ -1,3 +1,5 @@
+package com.wethura.learn.jdk8;
+
 /**
  * @author wethura
  * @date 2020/11/22 上午2:22
