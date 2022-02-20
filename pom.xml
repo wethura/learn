@@ -49,6 +49,64 @@
                 <artifactId>spring-cloud-commons-dependencies</artifactId>
                 <version>3.1.0</version>
             </dependency>
+            <dependency>
+                <artifactId>spring-data-commons</artifactId>
+                <groupId>org.springframework.data</groupId>
+                <version>${spring-data.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>spring-core</artifactId>
+                <groupId>org.springframework</groupId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>spring-beans</artifactId>
+                <groupId>org.springframework</groupId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>spring-context</artifactId>
+                <groupId>org.springframework</groupId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>spring-aop</artifactId>
+                <groupId>org.springframework</groupId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>spring-tx</artifactId>
+                <groupId>org.springframework</groupId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>spring-oxm</artifactId>
+                <groupId>org.springframework</groupId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>spring-jcl</artifactId>
+                <groupId>org.springframework</groupId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>spring-boot-test</artifactId>
+                <groupId>org.springframework.boot</groupId>
+                <scope>test</scope>
+                <version>2.5.8</version>
+            </dependency>
+            <dependency>
+                <artifactId>spring-boot-autoconfigure</artifactId>
+                <groupId>org.springframework.boot</groupId>
+                <version>2.5.8</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <properties>
+        <spring-boot.version>2.5.8</spring-boot.version>
+        <spring-cloud.version>3.1.0</spring-cloud.version>
+        <spring-data.version>2.5.8</spring-data.version>
+        <spring.version>5.3.9</spring.version>
+    </properties>
 </project>
