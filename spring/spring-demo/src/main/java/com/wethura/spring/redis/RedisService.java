@@ -1,21 +1,23 @@
 package com.wethura.spring.redis;
 
+import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.SetOperations;
 
 /**
  * @author wethura
  * @date 2021/1/25 上午3:18
  */
-public class Redis {
+public class RedisService {
 
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
-    public void redisCore() {
-        final SetOperations<String, String> ops = redisTemplate.opsForSet();
+    public void set(String k, String... values) {
+        redisTemplate.opsForSet().add(k, values);
+    }
 
-        ops.add("winner", "wethura", "sola");
+    public Set<String> members(String k) {
+        return redisTemplate.opsForSet().members(k);
     }
 }

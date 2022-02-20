@@ -24,8 +24,8 @@ public class RedisAutoConfiguration {
     }
 
     @Bean
-    public Redis redis() {
-        return new Redis();
+    public RedisService redis() {
+        return new RedisService();
     }
 
 }
