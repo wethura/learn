@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>net.bingosoft.wethura</groupId>
+    <groupId>com.wethura</groupId>
     <artifactId>learn</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -20,7 +20,11 @@
         <module>io/network/netty/client</module>
 
         <!-- JAVA 特性 -->
-        <module>java/agent</module>
+        <!-- JAVA AGENT -->
+        <module>java/agent/agent</module>
+        <module>java/agent/agent-test</module>
+
+        <!-- JAVA VERSION -->
         <module>java/version/jdk8</module>
         <module>java/version/jdk9</module>
         <module>java/version/jdk10</module>
@@ -29,6 +33,7 @@
         <!-- Spring 以及插件 -->
         <module>spring/spring-demo</module>
         <module>spring/components/kafka</module>
+        <module>java/utils/encode</module>
     </modules>
 
     <dependencyManagement>
