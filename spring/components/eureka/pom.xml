@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <artifactId>eureka</artifactId>
+    <dependencies>
+        <dependency>
+            <artifactId>junit</artifactId>
+            <groupId>junit</groupId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <artifactId>eureka-client</artifactId>
+            <groupId>com.netflix.eureka</groupId>
+            <scope>runtime</scope>
+            <version>1.10.17</version>
+        </dependency>
+
+    </dependencies>
+
+    <modelVersion>4.0.0</modelVersion>
+    <name>WETHURA:::SPRING:EUREKA</name>
+
+    <parent>
+        <artifactId>learn</artifactId>
+        <groupId>com.wethura</groupId>
+        <relativePath>../../../pom.xml</relativePath>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
+    </properties>
+
+
+</project>

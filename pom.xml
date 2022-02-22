@@ -30,10 +30,13 @@
         <module>java/version/jdk10</module>
         <module>java/version/jdk11</module>
 
+        <!-- JAVA Encoder -->
+        <module>java/utils/encode</module>
+
         <!-- Spring 以及插件 -->
         <module>spring/spring-demo</module>
         <module>spring/components/kafka</module>
-        <module>java/utils/encode</module>
+        <module>spring/components/eureka</module>
     </modules>
 
     <dependencyManagement>
