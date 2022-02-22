@@ -12,6 +12,14 @@
     <artifactId>design-patterns</artifactId>
     <name>WETHURA:::DESIGN_PATTERNS</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
