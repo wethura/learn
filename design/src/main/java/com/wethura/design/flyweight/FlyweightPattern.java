@@ -1,4 +1,4 @@
-package com.wethura.design;
+package com.wethura.design.flyweight;
 
 import java.util.HashMap;
 
@@ -63,6 +63,7 @@ public class FlyweightPattern {
         final Flyweight flyweight_a_01 = FlyweightFactory.getFlyweight("flyweight a");
         final Flyweight flyweight_a_02 = FlyweightFactory.getFlyweight("flyweight a");
         final Flyweight flyweight_a_03 = FlyweightFactory.getFlyweight("flyweight a");
+
         final Flyweight flyweight_b_01 = FlyweightFactory.getFlyweight("flyweight b");
         final Flyweight flyweight_b_02 = FlyweightFactory.getFlyweight("flyweight b");
 
@@ -71,6 +72,7 @@ public class FlyweightPattern {
         flyweight_a_01.execute(new UnsharedConcreteFlyweight("1st time execute flyweight a"));
         flyweight_a_02.execute(new UnsharedConcreteFlyweight("2st time execute flyweight a"));
         flyweight_a_03.execute(new UnsharedConcreteFlyweight("3st time execute flyweight a"));
+
         flyweight_b_01.execute(new UnsharedConcreteFlyweight("1st time execute flyweight b"));
         flyweight_b_02.execute(new UnsharedConcreteFlyweight("2st time execute flyweight b"));
     }

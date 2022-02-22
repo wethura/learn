@@ -1,7 +1,9 @@
+package com.wethura.learn.jdk8;
+
 /**
  * @author wethura
  * @date 2020/11/22 上午2:05
- * @desc Lambda and functional interface.
+ * @desc com.wethura.learn.jdk8.Lambda and functional interface.
  */
 public class Lambda {
 

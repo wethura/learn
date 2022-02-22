@@ -1,4 +1,4 @@
-package com.wethura.design;
+package com.wethura.design.observer;
 
 import java.util.ArrayList;
 import java.util.List;

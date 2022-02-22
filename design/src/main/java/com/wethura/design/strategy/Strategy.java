@@ -1,4 +1,4 @@
-package com.wethura.design;
+package com.wethura.design.strategy;
 
 /**
  * support a union interface to execute the method what we need.

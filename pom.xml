@@ -13,7 +13,7 @@
 
     <modules>
         <!-- 设计模式 -->
-        <module>design-patterns</module>
+        <module>design</module>
 
         <!-- IO: 包含本地IO 和 网络IO -->
         <module>io/network/netty/server</module>
@@ -41,12 +41,45 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- TEST UTILS -->
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter</artifactId>
                 <version>RELEASE</version>
                 <scope>test</scope>
             </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.13.1</version>
+                <scope>compile</scope>
+            </dependency>
+
+            <!-- HTTP UTILS -->
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>3.10.0</version>
+                <scope>compile</scope>
+            </dependency>
+
+
+            <!-- JSON utils -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.79</version>
+            </dependency>
+
+            <!-- BASE utils -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>31.0.1-jre</version>
+                <scope>compile</scope>
+            </dependency>
+
+            <!-- SPRING  -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>

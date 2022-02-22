@@ -1,4 +1,4 @@
-package com.wethura.design;
+package com.wethura.design.chainofresponsibility;
 
 /**
  * 责任链设计模式
