@@ -37,6 +37,11 @@
         <module>spring/spring-demo</module>
         <module>spring/components/kafka</module>
         <module>spring/components/eureka</module>
+
+        <!-- Grpc -->
+        <module>io/network/grpc/grpc-server</module>
+        <module>io/network/grpc/grpc-client</module>
+        <module>io/network/grpc/grpc-core</module>
     </modules>
 
     <dependencyManagement>
