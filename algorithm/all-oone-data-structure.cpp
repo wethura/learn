@@ -36,7 +36,8 @@ public:
         } else { // 当前key已存在
             // 移动到当前 数量的最前面
             int ind = keyInfos[key].second, num = keyInfos[key].first;
-            int ind_change = keyInfos[keys[start[num]]].second, num_change = keyInfos[keys[start[num]]].first;
+            pair<int, int> p = keyInfos[keys[start[num]]];
+            int ind_change = p.second, num_change = p.first;
 
             // cout << "move: " << ind << "-" << num << " " << ind_change << "-" << num_change << endl;
             // 更新交换位置的字符串的位置信息
@@ -65,7 +66,8 @@ public:
         // assert keyInfos.find(key) != null;
 
         int ind = keyInfos[key].second, num = keyInfos[key].first;
-        int ind_change = keyInfos[keys[end[num]]].second, num_change = keyInfos[keys[end[num]]].first;
+        pair<int, int> p = keyInfos[keys[end[num]]];
+        int ind_change = p.second, num_change = p.first;
         if(num == 1) {
             // 删除该key
             keyInfos.erase(key);
