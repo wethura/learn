@@ -25,3 +25,7 @@ store my learning log.
 ### design pattern
 
 1. the demo of design pattern with java.
+
+## feature
+
+> Following my heart to learn something i intersted.
