@@ -9,8 +9,8 @@
         <relativePath>../../../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>grpc-core</artifactId>
+    <name>WETHURA:::IO:GRPC:CORE</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

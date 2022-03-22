@@ -16,8 +16,8 @@
         <module>design</module>
 
         <!-- IO: 包含本地IO 和 网络IO -->
-        <module>io/network/netty/server</module>
-        <module>io/network/netty/client</module>
+        <module>io/network/netty/netty-client</module>
+        <module>io/network/netty/netty-server</module>
 
         <!-- JAVA 特性 -->
         <!-- JAVA AGENT -->
@@ -33,10 +33,15 @@
         <!-- JAVA Encoder -->
         <module>java/utils/encode</module>
 
+
+        <!-- JAVA Multiple Thread -->
+        <module>java/multithread</module>
+
         <!-- Spring 以及插件 -->
         <module>spring/spring-demo</module>
         <module>spring/components/kafka</module>
         <module>spring/components/eureka</module>
+        <module>spring/components/nacos</module>
 
         <!-- Grpc -->
         <module>io/network/grpc/grpc-server</module>
