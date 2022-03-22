@@ -11,6 +11,39 @@
 
     <name>WETHURA:::LEARN</name>
 
+    <modules>
+        <!-- 设计模式 -->
+        <module>design</module>
+
+        <!-- IO: 包含本地IO 和 网络IO -->
+        <module>io/network/netty/server</module>
+        <module>io/network/netty/client</module>
+
+        <!-- JAVA 特性 -->
+        <!-- JAVA AGENT -->
+        <module>java/agent/agent</module>
+        <module>java/agent/agent-test</module>
+
+        <!-- JAVA VERSION -->
+        <module>java/version/jdk8</module>
+        <module>java/version/jdk9</module>
+        <module>java/version/jdk10</module>
+        <module>java/version/jdk11</module>
+
+        <!-- JAVA Encoder -->
+        <module>java/utils/encode</module>
+
+        <!-- Spring 以及插件 -->
+        <module>spring/spring-demo</module>
+        <module>spring/components/kafka</module>
+        <module>spring/components/eureka</module>
+
+        <!-- Grpc -->
+        <module>io/network/grpc/grpc-server</module>
+        <module>io/network/grpc/grpc-client</module>
+        <module>io/network/grpc/grpc-core</module>
+    </modules>
+
     <dependencyManagement>
         <dependencies>
             <!-- TEST UTILS -->
@@ -122,41 +155,10 @@
         </dependencies>
     </dependencyManagement>
 
-    <modules>
-        <!-- 设计模式 -->
-        <module>design</module>
-
-        <!-- IO: 包含本地IO 和 网络IO -->
-        <module>io/network/netty/server</module>
-        <module>io/network/netty/client</module>
-
-        <!-- JAVA 特性 -->
-        <!-- JAVA AGENT -->
-        <module>java/agent/agent</module>
-        <module>java/agent/agent-test</module>
-
-        <!-- JAVA VERSION -->
-        <module>java/version/jdk8</module>
-        <module>java/version/jdk9</module>
-        <module>java/version/jdk10</module>
-        <module>java/version/jdk11</module>
-
-        <!-- JAVA Encoder -->
-        <module>java/utils/encode</module>
-
-        <!-- Spring 以及插件 -->
-        <module>spring/spring-demo</module>
-        <module>spring/components/kafka</module>
-        <module>spring/components/eureka</module>
-        <module>spring/components/nacos</module>
-    </modules>
-
     <properties>
         <spring-boot.version>2.5.8</spring-boot.version>
         <spring-cloud.version>3.1.0</spring-cloud.version>
         <spring-data.version>2.5.8</spring-data.version>
         <spring.version>5.3.9</spring.version>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
     </properties>
 </project>
