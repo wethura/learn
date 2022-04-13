@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: org.elasticsearch.xpack.sql.jdbc.EsDriver
+    url: jdbc:es://wethura:9200
+    username: elastic
+    password: _papin=d-CwFf=clyp9i
+    hikari:
+      read-only: true
