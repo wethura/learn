@@ -20,6 +20,9 @@
         <module>io/network/netty/netty-server</module>
 
         <!-- JAVA 特性 -->
+        <!-- JAVA BASE -->
+        <module>java/base</module>
+
         <!-- JAVA AGENT -->
         <module>java/agent/agent</module>
         <module>java/agent/agent-test</module>
