@@ -1,16 +1,15 @@
 package com.wethura.spring.redis;
 
+import com.wethura.spring.AbstractDemoTests;
 import java.util.Set;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
 
 /**
  * @author wethura
  */
-@SpringBootTest
-public class RedisTest extends Assert {
+public class RedisTest extends AbstractDemoTests {
 
     public static final String REDIS_SET_TEST_KEY = "redis_set_test_key";
     public static final String REDIS_SET_TEST_VALUE_1 = "redis_set_test_value_1";

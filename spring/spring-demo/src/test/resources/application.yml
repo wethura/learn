@@ -1,8 +1,33 @@
 spring:
   datasource:
-    driver-class-name: org.elasticsearch.xpack.sql.jdbc.EsDriver
-    url: jdbc:es://wethura:9200
+    driver-class-name: com.amazon.opendistroforelasticsearch.jdbc.Driver
+    url: jdbc:elasticsearch://http://wethura:9200
     username: elastic
-    password: _papin=d-CwFf=clyp9i
+    password: jFu7isrL18Tq4ZWhCT9S
     hikari:
       read-only: true
+
+logging.level.root: DEBUG
+fly.migration.ddl-auto: false
+fly.migration.enabled: false
+
+#Changed password for user apm_system
+#PASSWORD apm_system = nMTQY9H6VhxWinMEaWkV
+#
+#Changed password for user kibana_system
+#PASSWORD kibana_system = YO5XP7oukd4geLi7hzeE
+#
+#Changed password for user kibana
+#PASSWORD kibana = YO5XP7oukd4geLi7hzeE
+#
+#Changed password for user logstash_system
+#PASSWORD logstash_system = lsAaEbBIxeGOmW88l4YJ
+#
+#Changed password for user beats_system
+#PASSWORD beats_system = 47IYIe3KeGF2BuVEYPUx
+#
+#Changed password for user remote_monitoring_user
+#PASSWORD remote_monitoring_user = 9n4v9tf3vfX1uMdcg5je
+#
+#Changed password for user elastic
+#PASSWORD elastic = jFu7isrL18Tq4ZWhCT9S

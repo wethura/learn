@@ -28,18 +28,24 @@
         <dependency>
             <artifactId>spring-data-redis</artifactId>
             <groupId>org.springframework.data</groupId>
-            <version>${spring-boot.version}</version>
         </dependency>
 
         <dependency>
             <artifactId>spring-boot-starter</artifactId>
             <groupId>org.springframework.boot</groupId>
-            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <artifactId>spring-boot-starter-test</artifactId>
             <groupId>org.springframework.boot</groupId>
-            <version>${spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <groupId>org.springframework.boot</groupId>
+        </dependency>
+        <dependency>
+            <artifactId>opendistro-sql-jdbc</artifactId>
+            <groupId>com.amazon.opendistroforelasticsearch.client</groupId>
         </dependency>
     </dependencies>
 
