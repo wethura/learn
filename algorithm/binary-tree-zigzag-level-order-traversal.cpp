@@ -20,7 +20,7 @@ struct TreeNode {
 
 class Solution {
 public:
-    vector<vector<int>> levelOrder(TreeNode* root) {
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
         if(!root) return {};
 
         vector<vector<int>> res;
@@ -50,6 +50,12 @@ public:
                 pre_count = next_count;
                 next_count = 0;
                 ind ++;
+            }
+        }
+
+        for(int i = 0; i < res.size(); i ++) {
+            if(i % 2 == 1) {
+                reverse(res[i].begin(), res[i].end());
             }
         }
 
