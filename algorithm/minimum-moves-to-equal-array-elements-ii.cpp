@@ -9,6 +9,8 @@ template<typename T> void logger(vector<vector<T>> arrs);
 /**
  * coding here
  * 自以为是的利用快排的原理进行优化，结果比人家全部排序的速度还要慢~麻了
+ * 
+ * 可能由于数据的特殊性，加上洗牌算法之后发现性能上来了，但是没有比全部排序快，不开心~~~
  */
 class Solution {
 // private: 
