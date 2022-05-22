@@ -1,10 +1,7 @@
 #include<bits/stdc++.h>
 #include "time.h"
+#include "logger.h"
 using namespace std;
-
-template<typename T> void logger(T e);
-template<typename T> void logger(vector<T> arr);
-template<typename T> void logger(vector<vector<T>> arrs);
 
 /**
  * coding here
@@ -36,7 +33,7 @@ public:
             }
         }
 
-        logger(steps);
+        log.info(steps);
         logger(patience);
 
         int res = 0;

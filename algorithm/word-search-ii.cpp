@@ -89,8 +89,7 @@ public:
 
 int main() {
     Solution s;
-    vector<vector<char>> board = {
-        {'a'}};
+    vector<vector<char>> board = {{'a'}};
     vector<string> words = {"a"};
     vector<string> res = s.findWords(board, words);
     for(string w: res) {

@@ -1,10 +1,7 @@
 #include<bits/stdc++.h>
 #include "time.h"
+#include "logger.h"
 using namespace std;
-
-template<typename T> void logger(T e);
-template<typename T> void logger(vector<T> arr);
-template<typename T> void logger(vector<vector<T>> arrs);
 
 struct Node {
     int x, y, val;
@@ -130,32 +127,6 @@ int main() {
     // logger(arr_1);
 
     logger(s.longestIncreasingPath(arr_1));
-
-    // vector<vector<char>> arr = {};
-    
-
-
-    // vector<int> res = 
-    // vector<vector<int>> res = 
     timer.log("Program execute");
 
-    // vector<char> res = 
-    // vector<vector<char>> res = 
-
-
-    // logger(res);
-}
-
-template<typename T> void logger(T e) {
-    cout << e << endl;
-}
-
-template<typename T> void logger(vector<T> arr) {
-    for_each(arr.begin(), arr.end(), logger); 
-    cout << endl;
-}
-
-template<typename T> void logger(vector<vector<T>> arrs) {
-    for_each(arrs.begin(), arrs.end(), logger);
-    cout << endl;
 }

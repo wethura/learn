@@ -1,9 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-template<typename T> void logger(T e);
-template<typename T> void logger(vector<T> arr);
-template<typename T> void logger(vector<vector<T>> arrs);
 
 class TreeShardArray {
 private:
@@ -74,34 +71,7 @@ int main() {
     Solution s;
 
     vector<int> arr = {-2,5,-1};
-    // vector<char> arr = {};
-
-    // vector<vector<int>> arr = {};
-    // vector<vector<char>> arr = {};
-    
 
     cout << s.countRangeSum(arr, -2, 2) << endl;
 
-    // vector<int> res = 
-    // vector<vector<int>> res = 
-    
-    // vector<char> res = 
-    // vector<vector<char>> res = 
-
-
-    // logger(res);
-}
-
-template<typename T> void logger(T e) {
-    cout << e << endl;
-}
-
-template<typename T> void logger(vector<T> arr) {
-    for_each(arr.begin(), arr.end(), logger); 
-    cout << endl;
-}
-
-template<typename T> void logger(vector<vector<T>> arrs) {
-    for_each(arrs.begin(), arrs.end(), logger);
-    cout << endl;
 }
