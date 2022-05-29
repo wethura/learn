@@ -59,40 +59,14 @@ int main() {
 
     Solution s;
 
-    // vector<int> arr = {1, 2, 3, 4};
-    // vector<char> arr = {'a', 'b', 'c', 'd'};
-
-    // vector<vector<int>> arrs = {{1, 2, 3, 4}, {5, 6, 7, 8}};
-    // vector<vector<char>> arrs = {{'a', 'b', 'c', 'd'}, {'e', 'f', 'g', 'h'}};
 
     vector<vector<int>> edges = {{3,8},{4,13},{0,7},{0,4},{1,8},{14,1},{7,2},{13,10},{9,11},{12,14},{0,6},{2,12},{11,5},{6,9},{10,3}};
     vector<int> patience = {0,3,2,1,5,1,5,5,3,1,2,2,2,2,1}  ;
 
     logger(s.networkBecomesIdle(edges, patience));
 
-    // vector<int> res = s.resolve();
-    // vector<vector<int>> res = s.resolve();
-    // vector<char> res = s.resolve();
-    // vector<vector<char>> res = s.resolve();
-
     timer.log("Program execute");
 
 
     // logger(res);
-}
-
-template<typename T> void logger(T e) {
-    cout << e << endl;
-}
-
-template<typename T> void logger(vector<T> arr) {
-    for_each(arr.begin(), arr.end(), [](T &e){cout << e << " ";});
-    cout << endl << endl;;
-}
-
-template<typename T> void logger(vector<vector<T>> arrs) {
-    for_each(arrs.begin(), arrs.end(), [](vector<T> &arr) {
-        for_each(arr.begin(), arr.end(), [](T &e){cout << e << " ";});
-        cout << endl;
-    });cout << endl;
 }
