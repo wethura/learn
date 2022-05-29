@@ -1,2 +1,7 @@
-package com.wethura.kafka.consumer;public class EchoConsumer {
+package com.wethura.kafka.consumer;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class EchoConsumer {
 }
