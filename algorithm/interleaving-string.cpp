@@ -1,10 +1,7 @@
 #include<bits/stdc++.h>
 #include "time.h"
+#include "logger.h"
 using namespace std;
-
-template<typename T> void logger(T e);
-template<typename T> void logger(vector<T> arr);
-template<typename T> void logger(vector<vector<T>> arrs);
 
 /**
  * coding here
@@ -40,20 +37,4 @@ int main() {
     Solution s;
     logger(s.isInterleave("aabcc", "dbbca", "aadbbcbcac"));
     timer.log("Program execute");
-}
-
-template<typename T> void logger(T e) {
-    cout << e << endl;
-}
-
-template<typename T> void logger(vector<T> arr) {
-    for_each(arr.begin(), arr.end(), [](T &e){cout << e << " ";});
-    cout << endl << endl;;
-}
-
-template<typename T> void logger(vector<vector<T>> arrs) {
-    for_each(arrs.begin(), arrs.end(), [](vector<T> &arr) {
-        for_each(arr.begin(), arr.end(), [](T e){cout << e << " ";});
-        cout << endl;
-    });cout << endl;
 }
