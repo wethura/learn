@@ -3,9 +3,21 @@ spring:
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       transaction-id-prefix: tx.
+      bootstrap-servers: 192.168.8.122:9092
     consumer:
       value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
       properties:
         isolation.level: read_committed
     listener:
       type: batch
+      ack-time: 1000
+      poll-timeout: 1000
+    bootstrap-servers: 192.168.8.122:9092
+
+logging:
+  level:
+    root: info
+
+# 配置日志
+LOG_PATH: ./.log
+FILE_LOG_PATTERN:
