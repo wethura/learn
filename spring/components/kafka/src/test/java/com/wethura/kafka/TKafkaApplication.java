@@ -1,6 +1,8 @@
 package com.wethura.kafka;
 
 import org.apache.kafka.clients.admin.NewTopic;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -11,10 +13,12 @@ import org.springframework.kafka.support.converter.JsonMessageConverter;
 import org.springframework.kafka.support.converter.RecordMessageConverter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.testcontainers.containers.GenericContainer;
-import org.testcontainers.containers.KafkaContainer;
 import org.testcontainers.utility.DockerImageName;
 
 import java.util.Arrays;
+import java.util.Properties;
+
+import static com.wethura.kafka.KafkaConstants.CONSUMER_TOTAL_PARTITION;
 
 @EnableTransactionManagement
 @SpringBootApplication
@@ -64,7 +68,7 @@ public class TKafkaApplication {
 
     @Bean(name = KafkaConstants.DEFAULT_TOPICS)
     NewTopic defaultTopics() {
-        return TopicBuilder.name(KafkaConstants.DEFAULT_TOPICS).partitions(KafkaConstants.CONSUMER_PARTITION_03).build();
+        return TopicBuilder.name(KafkaConstants.DEFAULT_TOPICS).partitions(CONSUMER_TOTAL_PARTITION).build();
     }
 
     public static void main(String[] args) {

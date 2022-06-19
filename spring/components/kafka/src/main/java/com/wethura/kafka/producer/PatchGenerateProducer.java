@@ -29,7 +29,7 @@ public class PatchGenerateProducer implements InitializingBean {
         while(true) {
             cnt ++;
             try {
-                /**
+                /*
                  * sleep for a moment.
                  */
                 TimeUnit.MILLISECONDS.sleep(1);
@@ -50,9 +50,9 @@ public class PatchGenerateProducer implements InitializingBean {
         template.send(KafkaConstants.DEFAULT_TOPICS, KafkaConstants.CONSUMER_PARTITION_02,
                 randomKey(KafkaConstants.DEFAULT_TOPICS, KafkaConstants.CONSUMER_PARTITION_02, cnt),
                 data(KafkaConstants.DEFAULT_TOPICS, KafkaConstants.CONSUMER_PARTITION_02, cnt));
-        template.send(KafkaConstants.DEFAULT_TOPICS, KafkaConstants.CONSUMER_PARTITION_03,
-                randomKey(KafkaConstants.DEFAULT_TOPICS, KafkaConstants.CONSUMER_PARTITION_03, cnt),
-                data(KafkaConstants.DEFAULT_TOPICS, KafkaConstants.CONSUMER_PARTITION_03, cnt));
+        template.send(KafkaConstants.DEFAULT_TOPICS, KafkaConstants.CONSUMER_PARTITION_00,
+                randomKey(KafkaConstants.DEFAULT_TOPICS, KafkaConstants.CONSUMER_PARTITION_00, cnt),
+                data(KafkaConstants.DEFAULT_TOPICS, KafkaConstants.CONSUMER_PARTITION_00, cnt));
     }
     private String randomKey(String name, int partition, int cnt) {
         return String.format("%s-%s_%d: %s", name, partition, cnt, new Random().nextInt());
