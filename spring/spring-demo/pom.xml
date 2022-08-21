@@ -19,43 +19,24 @@
     </properties>
 
     <dependencies>
-        <!-- SPRING DATA -->
-        <dependency>
-            <artifactId>spring-data-redis</artifactId>
-            <groupId>org.springframework.data</groupId>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
         <!-- SPRING BOOT -->
         <dependency>
             <artifactId>spring-boot-starter</artifactId>
             <groupId>org.springframework.boot</groupId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
             <artifactId>spring-boot-starter-test</artifactId>
             <groupId>org.springframework.boot</groupId>
         </dependency>
         <dependency>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
-        <!-- REDIS -->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-        </dependency>
-
-        <!-- JUnit -->
-<!--        <dependency>-->
-<!--            <groupId>junit</groupId>-->
-<!--            <artifactId>junit</artifactId>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -80,22 +61,12 @@
         <!-- TEST CONTAINER -->
         <dependency>
             <groupId>org.testcontainers</groupId>
-            <artifactId>mysql</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.testcontainers</groupId>
             <artifactId>testcontainers</artifactId>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.searchbox</groupId>
-            <artifactId>jest</artifactId>
-            <version>6.3.1</version>
         </dependency>
     </dependencies>
 

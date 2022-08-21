@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: wethura-spring-demo
+  security:
+    user:
+      name: wethura
+      password: 111111
+server:
+  servlet:
+    context-path: /demo
+  port: 8080
+logging:
+  level:
+    root: info
