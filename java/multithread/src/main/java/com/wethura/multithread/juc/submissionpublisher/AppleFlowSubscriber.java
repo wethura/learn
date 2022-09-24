@@ -2,7 +2,7 @@ package com.wethura.multithread.juc.submissionpublisher;
 
 import java.util.concurrent.Flow;
 
-public class AppleFlowSubcriber implements Flow.Subscriber<String> {
+public class AppleFlowSubscriber implements Flow.Subscriber<String> {
     @Override
     public void onSubscribe(Flow.Subscription subscription) {
 
@@ -10,12 +10,13 @@ public class AppleFlowSubcriber implements Flow.Subscriber<String> {
 
     @Override
     public void onNext(String item) {
-        System.out.println("");
+        System.out.printf("AppleFlowSubscriber: %s receive %s", Thread.currentThread().getName(), item);
     }
 
     @Override
     public void onError(Throwable throwable) {
-
+        System.out.printf("AppleFlowSubscriber: something error, %s", throwable.getMessage());
+        throwable.printStackTrace();
     }
 
     @Override
