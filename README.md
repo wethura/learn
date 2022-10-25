@@ -13,7 +13,7 @@ store my learning log.
 2. java
 3. network
 4. cloud service  
-  a. spring cloud config  
+  releaseResource. spring cloud config  
   b. netflix eureka  
   c. alibaba nacos  
 5. multi thread
