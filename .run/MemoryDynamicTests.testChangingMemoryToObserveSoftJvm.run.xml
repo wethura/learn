@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MemoryDynamicTests.testChangingMemoryToObserveSoftJvm" type="JUnit" factoryName="JUnit" folderName="tests" nameIsGenerated="true">
+    <module name="base" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.wethura.base.jvm.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <option name="PACKAGE_NAME" value="com.wethura.base.jvm" />
+    <option name="MAIN_CLASS_NAME" value="com.wethura.base.jvm.MemoryDynamicTests" />
+    <option name="METHOD_NAME" value="testChangingMemoryToObserveSoftJvm" />
+    <option name="TEST_OBJECT" value="method" />
+    <option name="VM_PARAMETERS" value="-ea -Xmx256m -Xms256m" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

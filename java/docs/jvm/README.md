@@ -5,4 +5,5 @@
 ## 学习清单
 
 1. [JVM 内存模型](./memory-structure.md)
-2. [HotSpot 虚拟机对象](./memory-jvm.md)
+2. [HotSpot 虚拟机对象](./memory-jvm-hotspot.md)
+3. [垃圾回收策略与算法](./garbage-collect.md)
