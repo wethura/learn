@@ -7,8 +7,11 @@ spring:
       password: 111111
 server:
   servlet:
-    context-path: /demo
+    context-path: ${CONTEXT_PATH:/demo}
   port: 8080
 logging:
   level:
     root: debug
+
+call:
+  endpoint: ${CALL_ENDPOINT:http://localhost:8080/demo/hello/permit}

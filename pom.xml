@@ -58,6 +58,7 @@
         <module>io/network/grpc/grpc-client</module>
         <module>io/network/grpc/grpc-core</module>
         <module>spring/components/sharding-jdbc</module>
+        <module>spring/components/rabbitmq</module>
     </modules>
 
     <dependencyManagement>

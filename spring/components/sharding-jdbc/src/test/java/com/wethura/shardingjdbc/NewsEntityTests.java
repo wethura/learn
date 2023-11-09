@@ -1,13 +1,12 @@
 package com.wethura.shardingjdbc;
 
 import com.wethura.shardingjdbc.entity.NewsEntity;
+import java.util.List;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StopWatch;
-
-import java.util.List;
 
 /**
  * Tests for {@link NewsEntity}.
@@ -20,10 +19,10 @@ public class NewsEntityTests extends AbstractNewsEntityTests {
     @Disabled
     void testBatchInsertData_100lines() {
         // delete all datas.
-        template.execute("delete from " + NewsEntity.TABLE_NAME);
+//        template.execute("delete from " + NewsEntity.TABLE_NAME);
 
-        int batch = 2000, times = 500;
-        for (int i = 0; i < times; i++) {
+        int batch = 2000, times = 500, offset = 500;
+        for (int i = offset; i < times + offset; i++) {
             StringBuilder builder = new StringBuilder("insert into " + NewsEntity.TABLE_NAME + " (id, title) values ");
             int start = i * batch;
             for (int j = start; j < start + batch; j++) {

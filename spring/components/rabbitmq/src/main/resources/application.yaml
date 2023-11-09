@@ -1,0 +1,9 @@
+spring:
+  rabbitmq:
+    addresses: disater01:31762
+    username: rabbitmq
+    password: pass@word
+    connection-timeout: 30s
+    listener:
+      direct:
+        acknowledge-mode: manual
