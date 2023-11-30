@@ -21,7 +21,7 @@ public class NewsEntityTests extends AbstractNewsEntityTests {
         // delete all datas.
 //        template.execute("delete from " + NewsEntity.TABLE_NAME);
 
-        int batch = 2000, times = 500, offset = 500;
+        int batch = 1, times = 500, offset = 500;
         for (int i = offset; i < times + offset; i++) {
             StringBuilder builder = new StringBuilder("insert into " + NewsEntity.TABLE_NAME + " (id, title) values ");
             int start = i * batch;

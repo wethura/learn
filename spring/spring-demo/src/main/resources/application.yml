@@ -8,7 +8,7 @@ spring:
 server:
   servlet:
     context-path: ${CONTEXT_PATH:/demo}
-  port: 8080
+  port: ${SERVER_PORT:9999}
 logging:
   level:
     root: debug

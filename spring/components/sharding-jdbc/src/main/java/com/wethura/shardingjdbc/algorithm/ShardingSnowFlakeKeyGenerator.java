@@ -1,14 +1,15 @@
 package com.wethura.shardingjdbc.algorithm;
 
-import org.apache.commons.lang3.RandomUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.SystemUtils;
-import org.apache.shardingsphere.spi.keygen.ShardingKeyGenerator;
-import org.springframework.stereotype.Component;
-
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Properties;
+import org.apache.commons.lang3.RandomUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.SystemUtils;
+import org.apache.shardingsphere.infra.instance.InstanceContext;
+import org.apache.shardingsphere.infra.instance.InstanceContextAware;
+import org.apache.shardingsphere.sharding.spi.KeyGenerateAlgorithm;
+import org.springframework.stereotype.Component;
 
 /**
  * custom snowflake id generator.
@@ -16,7 +17,7 @@ import java.util.Properties;
  * @author sola
  **/
 @Component
-public class ShardingSnowFlakeKeyGenerator implements ShardingKeyGenerator {
+public class ShardingSnowFlakeKeyGenerator implements KeyGenerateAlgorithm, InstanceContextAware {
 
     public static final String ALGORITHM_NAME = "UFS_SHARDING_SNOWFLAKE";
 
@@ -113,14 +114,13 @@ public class ShardingSnowFlakeKeyGenerator implements ShardingKeyGenerator {
     }
 
     @Override
-    public Properties getProperties() {
-        return properties;
+    public void setInstanceContext(InstanceContext instanceContext) {
+
     }
 
     @Override
-    public void setProperties(Properties properties) {
-        this.properties = properties;
-
+    public boolean isDefault() {
+        return true;
     }
 
     private long getNextMill() {
