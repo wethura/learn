@@ -30,5 +30,6 @@ replay_pid*
 
 **.iml
 
-.vscode/
-.idea/
+.vscode
+.idea
+/**/target
