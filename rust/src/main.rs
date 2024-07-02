@@ -1,9 +1,8 @@
-use std::io::BufRead;
-
 mod generics;
 mod matcher;
 mod reference;
 mod base_types;
+mod stl;
 
 // async fn test_call_sync_method() {
 //     println!("calling rust out");
@@ -27,7 +26,7 @@ async fn main() {
     // }
 
     println!("calling rust out");
-    echo();
+    echo().await;
     println!("calling rust finished");
 }
 
