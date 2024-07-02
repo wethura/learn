@@ -52,6 +52,12 @@ mod tls {
         for e in &v {
             println!("{:?}", e);
         }
+        for e in &v {
+            match e {
+                IpAddr::V4(s) => println!("{}", s),
+                IpAddr::V6(s) => println!("{}", s),
+            }
+        }
     }
 
     #[test]

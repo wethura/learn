@@ -4,13 +4,14 @@ pub trait Draw {
     fn draw(&self);
 }
 
-
+// #[warn(dead_code)]
 #[derive(Debug)]
 pub struct Button {
     width: f64,
     height: f64,
 }
 
+// #[warn(dead_code)]
 #[derive(Debug)]
 pub struct SelectButton {
     width: f64,
@@ -68,5 +69,25 @@ pub fn test_draw() {
         ]
     };
 
-    screen.run()
+    screen.run();
+}
+
+#[test]
+pub fn test_button() {
+    let button = Button {
+        width: 5.0,
+        height: 12.0,
+    };
+
+    println!("button: x: {:?}, y: {:?}", button.width, button.height);
+}
+#[test]
+pub fn test_select_button() {
+    let button = SelectButton {
+        width: 5.0,
+        height: 12.0,
+        options: vec![String::from("blue"), String::from("red")],
+    };
+
+    println!("button: w: {:?}, h: {:?}, opt: {:?}", button.width, button.height, button.options);
 }

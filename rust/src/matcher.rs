@@ -1,3 +1,5 @@
+
+#[derive(Debug)]
 enum Direction {
     West,
     East,
@@ -15,7 +17,7 @@ fn test_matches() {
 }
 
 #[test]
-fn test_letmatches() {
+fn test_let_matches() {
     let direction = Direction::North;
 
     let num = match direction {
@@ -25,5 +27,8 @@ fn test_letmatches() {
         Direction::North=>3,
     };
 
-    println!("direction code: {:?}", num)
+    println!("direction code: {:?}", num);
+    println!("direction East: {:?}", Direction::East);
+    println!("direction East: {:?}", Direction::West);
+    println!("direction East: {:?}", Direction::South);
 }
