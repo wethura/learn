@@ -1,6 +1,7 @@
 package com.wethura.shardingjdbc;
 
 import com.wethura.shardingjdbc.entity.NewsEntity;
+import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -35,6 +36,8 @@ public class NewsEntityTests extends AbstractNewsEntityTests {
             template.execute(builder.toString());
             LOGGER.info("batch sql execute finished, sqe no: {}", start / batch);
         }
+
+        template.execute("select * from ufs_quota");
     }
 
     @Test
