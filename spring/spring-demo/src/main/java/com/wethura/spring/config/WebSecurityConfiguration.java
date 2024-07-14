@@ -1,5 +1,6 @@
 package com.wethura.spring.config;
 
+import java.util.Arrays;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -8,13 +9,14 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.SecurityFilterChain;
 
-import java.util.Arrays;
-
 @Configuration
 public class WebSecurityConfiguration {
+
     @Bean(name = "SecurityFilterChain_01")
     SecurityFilterChain securityFilterChain_01(HttpSecurity http) throws Exception {
-        return http.antMatcher("/hello/permit").authorizeRequests().anyRequest().permitAll().and().build();
+        return http.antMatcher("/hello/permit")
+                .antMatcher("hello/sleep")
+                .authorizeRequests().anyRequest().permitAll().and().build();
     }
 
     @Bean(name = "SecurityFilterChain_02")
