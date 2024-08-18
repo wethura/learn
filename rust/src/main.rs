@@ -3,6 +3,8 @@ mod matcher;
 mod reference;
 mod base_types;
 mod stl;
+mod io;
+mod functional_programing;
 
 // async fn test_call_sync_method() {
 //     println!("calling rust out");

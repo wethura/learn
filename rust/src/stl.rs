@@ -175,6 +175,7 @@ mod hashmap {
         // println!("{:?}", handsome_boys);
     }
 
+    #[warn(dropping_copy_types)]
     #[derive(Clone, Eq, PartialEq,Hash,Debug,Copy)]
     struct CloneableI32 {
         data :i32,
@@ -194,7 +195,7 @@ mod hashmap {
 
         // 由于 CloneableI32 实现了Copy 特性, 所以在进行 drop 的时候相当于无作用.
         // Invoking `std::mem::drop` with a value that implements `Copy` does nothing
-        drop(zk);
+        // drop(zk);
 
         println!("{:?}", &cool_plugin);
     }
